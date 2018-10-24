@@ -44,6 +44,9 @@ public class MyArrays {
         int[] arr1 = {0,2,4,6,8,10};
         int[] arr2 = {0,2,4,6,8,10};
         int[] arr3 = {10,8,6,4,2,0};
+        int[] arr4 = {12,1,5,-2,16,14};
+        char[] arr5 = {'d','a','y','m','x','c'};
+        String[] arr6 = {"cat", "banana", "dog", "apple", "whale", "tiger"};
 
         boolean result1 = Arrays.equals(arr1, arr2);
         boolean result2 = Arrays.equals(arr2, arr3);
@@ -58,6 +61,45 @@ public class MyArrays {
         for (int item : dest) {
             System.out.println(item);
         }
+
+        System.out.println();
+        //adds space only
+
+        String arr1String = Arrays.toString(arr1);
+        System.out.println("Your array contains the following values: " + arr1String);
+
+        System.out.println();
+        //adds space only
+
+        System.out.println(Arrays.toString(arr4));
+        Arrays.sort(arr4);
+        System.out.println(Arrays.toString(arr4));
+
+        System.out.println(Arrays.toString(arr5));
+        Arrays.sort(arr5);
+        System.out.println(Arrays.toString(arr5));
+
+        System.out.println(Arrays.toString(arr6));
+        Arrays.sort(arr6);
+        System.out.println(Arrays.toString(arr6));
+
+        System.out.println();
+        //adds space only
+
+        int foundInt =  Arrays.binarySearch(arr4, 5);
+        int foundIntValue = arr4[foundInt];
+        System.out.println(foundIntValue + " is at index: " + foundInt);
+
+        int foundChar =  Arrays.binarySearch(arr5, 'y');
+        Character foundCharValue = arr5[foundChar];
+        System.out.println(foundCharValue  + " is at index: " + foundChar);
+
+        int foundString =  Arrays.binarySearch(arr6, "tiger");
+        String foundStringValue = arr6[foundString];
+        System.out.println(foundStringValue + " is at index: " + foundString);
+
+
+
 
 
     }
