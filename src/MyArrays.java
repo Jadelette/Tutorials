@@ -51,6 +51,9 @@ public class MyArrays {
         System.out.println(result1);
         System.out.println(result2);
 
+        System.out.println();
+        //adds space only
+
         int[] dest = Arrays.copyOfRange(arr3,2,5);
         for (int item : dest) {
             System.out.println(item);
