@@ -1,3 +1,5 @@
+package loops;
+
 public class LoopDoWhile {
 
     public static void main(String[] args) {
