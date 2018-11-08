@@ -15,7 +15,12 @@ public class ExceptionHandlinggDemo2 {
         try
         {
             choice = input.nextInt();
-            System.out.printf("numberss[%d] = %d%n", choice, numbers[choice]);
+
+            if (choice==0)
+                throw new ArrayIndexOutOfBoundsException();
+            //throwing an exception must come before the catch blocks in order to obtain desired result
+
+            System.out.printf("numbers[%d] = %d%n", choice, numbers[choice]);
         }
 
         catch (ArrayIndexOutOfBoundsException e)
@@ -32,6 +37,7 @@ public class ExceptionHandlinggDemo2 {
         {
             System.out.printf(e.getMessage());
         }
+
 
     }
 
