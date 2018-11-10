@@ -4,12 +4,13 @@ public class StaticDemo {
 
            public static void main(String[] args) {
 
-            MyClass sd = new MyClass();
+            StaticDemoSetup sd = new StaticDemoSetup();
 
             System.out.println(sd.message);
             sd.displayMessage();
 
-            System.out.println(MyClass.greetings);
-            MyClass.displayGreetings();
+            System.out.println(StaticDemoSetup.greetings);
+            StaticDemoSetup.displayGreetings();
         }//end of psvm
+
 }//end of class

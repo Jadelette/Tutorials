@@ -1,6 +1,6 @@
 package staticdemo;
 
-public class MyClass {
+public class StaticDemoSetup {
 
     //non-static field and method
     public String message = "Hello, World";
