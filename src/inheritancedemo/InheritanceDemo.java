@@ -17,18 +17,6 @@ public class InheritanceDemo {
             m.displayMemInfo();
         } //end of foreach
 
-        /*NormalMember mem1 = new NormalMember("James", 1, 2010);
-        VIPMember mem2 = new VIPMember("Andy", 2, 2011);
-
-        mem1.calculateAnnualFee();
-        mem2.calculateAnnualFee();
-
-        mem1.displayMemInfo();
-        mem2.displayMemInfo();
-
-        mem1.setDiscount();
-        mem1.calculateAnnualFee();
-        mem1.displayMemInfo(); */
-    } //end of main method
+            } //end of main method
 
 } //end of class
